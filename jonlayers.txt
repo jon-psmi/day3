@@ -1,0 +1,13 @@
+Day 3
+
+layer 7 : window x     			services yan
+layer 6 server check: nbtstat -n 	datastream
+layer 4: ports netstat -ano  TVP 0.0.0
+
+layer 3: route print    = ipconfig
+
+
+
+layer 2: frame / macaddress
+			getmac
+layer 1: bits layer

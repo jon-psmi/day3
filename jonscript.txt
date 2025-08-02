@@ -1,0 +1,49 @@
+config t
+aaa new-model
+radius-server host 10.82.1.8 key keykeymo
+ip radius source-interface vlan 1
+aaa Authorization exec default group radius
+aaa Authentication login default group radius local
+Line vty 0 14
+login authentication default
+end
+
+
+
+WINDOWSRADIUS AUTH FOR LATEST CISCO ROUTERS/VPNS:
+
+config t
+init gi 1
+no shut
+ip add 101.82.1.5 255.255.255.0
+aaa new-model
+aaa authentication login default group RADGROUP local
+aaa authorization exec default group RADGROUP local
+radius server WINDOWSRADIUS
+address ipv4 10.82.1.8 auth-port 1813
+key keykeymo
+aaa group radius RADGROUP
+server 10.82.1.8
+line vty 0 14
+transport input all
+login athentication default
+end
+
+
+old is the best
+
+
+config t
+
+aaa new-model
+aaa authentication login default group RADGROUP local
+aaa authorization exec default group RADGROUP local
+radius server WINDOWSRADIUS
+address ipv4 10.82.1.8 auth-port 1813
+key keykeymo
+aaa group radius RADGROUP
+server 10.82.1.8
+line vty 0 14
+transport input all
+login athentication default
+end
