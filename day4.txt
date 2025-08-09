@@ -1,0 +1,22 @@
+192.168.20.2/20   (3RD,16i,)
+
+10.167.212.100 /22 (3rd, 4i)  
+
+40+40
+80+80
+160+40
+200
+
+
+
+
+powershell
+get-tlsciphersuite
+IKE SA Tunnel
+Internet Key Exchange Security Association Tunnel
+
+CBC - Chain Block Cipher   can encrpt
+GCM - Galois Control Mode can enccrypt and auth
+
+
+
